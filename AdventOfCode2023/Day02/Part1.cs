@@ -21,7 +21,6 @@
                     games.Add(game);
                 }
 
-
                 var total = new List<int>();
 
                 for (int i = 0; i < games.Count; i++)

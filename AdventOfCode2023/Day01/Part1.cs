@@ -18,10 +18,8 @@
                     foreach (var letter in line)
                         if (int.TryParse(letter.ToString(), out _))
                             chars.Add(letter.ToString());
-
                     numbers.Add(int.Parse(chars[0] + chars[^1]));
                 }
-
                 Console.WriteLine(numbers.Sum());
             }
             catch (Exception e)

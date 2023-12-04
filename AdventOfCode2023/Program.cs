@@ -1,4 +1,8 @@
-﻿Console.WriteLine("\nDay 3");
+﻿Console.WriteLine("\nDay 4");
+//AdventOfCode2023.Day04.Part1.Solution();
+//AdventOfCode2023.Day04.Part2.Solution();
+
+Console.WriteLine("\nDay 3");
 AdventOfCode2023.Day03.Part1.Solution();
 AdventOfCode2023.Day03.Part2.Solution();
 
