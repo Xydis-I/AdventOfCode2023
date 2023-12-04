@@ -28,7 +28,6 @@
                 foreach (var line in lines)
                 {
                     var dict = new SortedDictionary<int, string>();
-
                     foreach (var numString in numStrings.Keys)
                     {
                         if (!line.Contains(numString)) continue;
@@ -42,16 +41,11 @@
                             dict.Add(last, numStrings[numString].ToString());
                         }
                     }
-
-
                     for (var i = 0; i < line.Length; i++)
                         if (int.TryParse(line[i].ToString(), out _))
                             dict.Add(i, line[i].ToString());
-
-
                     numbers.Add(int.Parse(dict[dict.Keys.ToList()[0]] + dict[dict.Keys.ToList()[^1]]));
                 }
-
                 Console.WriteLine(numbers.Sum());
             }
             catch (Exception e)
